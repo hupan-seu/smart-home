@@ -1,0 +1,5 @@
+wechatbg:
+  emq.host-key: "host-key"
+  app-id: "app-id"
+  app-secret: "app-secret"
+

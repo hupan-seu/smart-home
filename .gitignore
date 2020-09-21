@@ -18,3 +18,6 @@
 .project
 .cache/**
 */target/
+
+# 微信小程序
+wechat-app/project.config.json

@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </block>
+  </view>
+
+  <view class="user-home">
+    <view class="user-home-title">
+      <text>我的家</text>
+    </view>
+    <view class="user-home-spacing "style="flex-direction:column;">
+      <view class="device-1" style="flex-direction:row;">
+        <view class="device-1-name">
+          <text>床头灯</text>
+        </view>
+        <view class="device-1-button">
+           <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+        </view>
+      </view>
+      <view class="device-2" style="flex-direction:row;">
+        <view class="device-2-name">
+          <text>柜顶灯</text>
+        </view>
+        <view class="device-2-button">
+           <switch checked="{{switch2Checked}}" bindchange="switch2Change"/>
+        </view>
+      </view>
+    </view>
+      
+  </view>
+</view>

@@ -1,6 +1,6 @@
 #include <ESP8266WiFi.h>
 
-const char* ssid = "xiaoxiongmao";
+const char* ssid = "hupan-here";
 const char* password = "xiongbaobao";
 
 bool connectOk = false;
